@@ -1,3 +1,6 @@
+import com.zubair.emp.Clerk;
+import com.zubair.emp.Employee;
+import com.zubair.emp.Manager;
 
 public class TestEmployee {
 

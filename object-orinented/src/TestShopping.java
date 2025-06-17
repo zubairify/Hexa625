@@ -1,3 +1,5 @@
+import com.zubair.shop.Product;
+import com.zubair.shop.ShoppingCart;
 
 public class TestShopping {
 

@@ -1,20 +1,15 @@
+import com.zubair.bank.AccountsFactory;
+import com.zubair.bank.Bank;
 
 public class TestAccounts {
 
 	public static void main(String[] args) {
 		
-		Bank c1 = new Current("Jammy");
+		Bank s1 = AccountsFactory.openSavingsAccount("Jim");
+		s1.summary();
 		
+		Bank c1 = AccountsFactory.openCurrentAccount("Jack");
 		c1.summary();
 		
-		c1.withdraw(3000);
-		c1.withdraw(6000);
-		
-		c1.summary();
-		
-		c1.deposit(2000);
-		c1.deposit(5000);
-		
-		c1.summary();
 	}
 }
