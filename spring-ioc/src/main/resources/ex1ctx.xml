@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="str" class="java.lang.String">
+		<constructor-arg value="Aloha Spring" />
+	</bean>
+
+	<bean id="hi" class="ex1.Hello">
+		<!-- <constructor-arg ref="str" /> -->
+		<property name="message" ref="str" />
+	</bean>
+	
+	<!-- <bean id="hi" class="ex1.Hello" /> -->
+	
+	<!-- <bean id="hi" class="ex1.Hello">
+		<constructor-arg value="Hello Spring" />
+	</bean> -->
+	
+	<!-- <bean id="hi" class="ex1.Hello">
+		<property name="message" value="Hola Spring" />
+	</bean> -->
+</beans>
